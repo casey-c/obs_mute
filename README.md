@@ -1,6 +1,8 @@
 # obs_mute
 Show an image when muted. This is a simplified version of: https://github.com/dmadison/OBS-Mute-Indicator
 
+![Screenshot](github/screenshot.png)
+
 ## Installation
 Download [mute.py from the releases page](https://github.com/casey-c/obs_mute/releases) and save it somewhere. In OBS, go to Tools -> Scripts and hit the plus sign and then add the downloaded script. You can optionally download mute.png as well as a starter image.
 
