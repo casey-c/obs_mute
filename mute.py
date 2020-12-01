@@ -19,6 +19,7 @@
 #
 
 import obspython as obs
+import winsound
 
 # ------------------------------------------------------------
 
@@ -38,6 +39,9 @@ callback_name = None  # source name for the current callback
 
 # ------------------------------------------------------------
 
+def beep():
+	winsound.Beep(440, 250)
+
 def get_scene():
 	src = obs.obs_frontend_get_current_scene()
 	scene = obs.obs_scene_from_source(src)
@@ -54,6 +58,7 @@ def callback(muted):
 	set_visibility(muted)
 	output = "muted" if muted else "unmuted"
 	print(output)
+	beep()
 	#write_to_file(output)
 
 def send_initial_state():
